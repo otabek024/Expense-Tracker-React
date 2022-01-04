@@ -1,6 +1,6 @@
-.container{
+.container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #333;
   display: flex;
   flex-direction: column;
@@ -9,38 +9,36 @@
   padding: 20px;
 }
 
-.title{
+.title {
   margin-bottom: 30px;
   color: white;
 }
 
-.expense-item{
+.expense-item {
   background-color: #555;
   padding: 20px;
-  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 18px;
-  margin-bottom: 20px;
 }
 
-.expense-item-description{
+.expense-item-description {
   width: 60%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.date{
+.date {
   margin-right: 20px;
 }
 
-.expense-item-description h2{
+.expense-item-description h2 {
   color: white;
 }
 
-.expense-item-price{
+.expense-item-price {
   background-color: darkviolet;
   border: 1px solid white;
   padding: 15px 20px;
@@ -50,7 +48,7 @@
   border-radius: 10px;
 }
 
-.expense-date{
+.expense-date {
   width: 100px;
   border: 1px solid white;
   background-color: #333;
@@ -60,20 +58,81 @@
   border-radius: 10px;
 }
 
-.expense_date_month{
+.expense_date_month {
   font-size: 18px;
 }
 
-.expense_date_year{
+.expense_date_year {
   font-size: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
-.expense_date_day{
+.expense_date_day {
   font-size: 24px;
 }
 
-.expenses{
+.expenses {
   width: 100%;
+  background-color: #111;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
+
+.card {
+  border-radius: 20px;
+  box-shadow: 0 1px 8px #111;
+}
+
+.new-expense{
+  background-color:mediumpurple;
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 8px #111;
+}
+
+.new-expense-controls{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.new-expense-control label{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.new-expense-control input{
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 25px;
+  margin-top: 5px;
+}
+
+.new-expense-actions{
+  text-align: right;
+}
+
+.new-expense-actions button{
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: darkviolet;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.new-expense-actions button:hover{
+  background-color: rgb(116, 1, 165);
+}
+

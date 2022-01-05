@@ -136,3 +136,29 @@
   background-color: rgb(116, 1, 165);
 }
 
+.expense-filter-control{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expense-filter-control label{
+  color: white;
+  font-weight: bold;
+}
+
+.expense-filter-control select{
+  padding: 7px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.no-expenses-found{
+  color: red;
+}
+
+.expense-list_fallback{
+  text-align: center;
+  color: white;
+}

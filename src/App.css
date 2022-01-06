@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #333;
   display: flex;
   flex-direction: column;
@@ -84,6 +84,7 @@
 .card {
   border-radius: 20px;
   box-shadow: 0 1px 8px #111;
+  margin-bottom: 20px;
 }
 
 .new-expense{
@@ -93,6 +94,7 @@
   border-radius: 20px;
   margin-bottom: 20px;
   box-shadow: 0 1px 8px #111;
+  text-align: center;
 }
 
 .new-expense-controls{
@@ -120,7 +122,10 @@
 }
 
 .new-expense-actions{
-  text-align: right;
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+
 }
 
 .new-expense-actions button{
@@ -161,4 +166,61 @@
 .expense-list_fallback{
   text-align: center;
   color: white;
+}
+
+.add-expense-button{
+  background-color: darkviolet;
+  color: white;
+  border: 1px solid white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-expense-button:hover{
+  background-color: rgb(100, 0, 143);
+}
+
+.chart{
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: #f8dfff;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  height: 10rem;
+}
+
+.chart-bar{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chart-bar-inner{
+  height: 100%;
+  width: 100%;
+  border: 1px solid #313131;
+  background-color: #c3b4f3;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 20px;
+}
+
+.chart-bar-fill{
+  background-color: #4826b9;
+  width: 100%;
+  transition: all 0.3 ease-out;
+}
+
+.chart-bar-label{
+  font-weight: bold;
+  font-size: .6rem;
+  text-align: center;
+  margin-top: 5px;
 }
